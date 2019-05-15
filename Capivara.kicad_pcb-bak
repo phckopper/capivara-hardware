@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 38)
+    (drawings 39)
     (tracks 438)
     (zones 0)
     (modules 66)
@@ -29,7 +29,7 @@
     (45 Margin user)
     (46 B.CrtYd user)
     (47 F.CrtYd user)
-    (48 B.Fab user)
+    (48 B.Fab user hide)
     (49 F.Fab user hide)
   )
 
@@ -87,7 +87,7 @@
       (mirror false)
       (drillshape 1)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory "Fabrication/"))
   )
 
   (net 0 "")
@@ -2691,6 +2691,7 @@
       (net 2 "Net-(C6-Pad2)"))
   )
 
+  (gr_circle (center 63.5 60.325) (end 63.728953 60.325) (layer F.SilkS) (width 0.2) (tstamp 5CDB2610))
   (gr_circle (center 67.183 77.851) (end 67.411953 77.851) (layer F.SilkS) (width 0.2) (tstamp 5CDB0B4A))
   (gr_circle (center 48.4505 87.884) (end 48.679453 87.884) (layer F.SilkS) (width 0.2))
   (gr_text "+   -" (at 50.419 52.705) (layer F.SilkS)
