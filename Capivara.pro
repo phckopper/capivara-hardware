@@ -1,4 +1,4 @@
-update=2019 May 15, Wednesday 01:20:24
+update=2019 May 20, Monday 17:51:03
 version=1
 last_client=kicad
 [general]
@@ -250,7 +250,7 @@ dPairViaGap=0.25
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=./Schematic.pdf
+PlotDirectoryName=./EsquemaV0.4.svg
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=

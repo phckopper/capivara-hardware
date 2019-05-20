@@ -5,10 +5,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "MicroDAQ"
+Date "2019-05-20"
+Rev "v0.4"
+Comp "Pedro Henrique Kopper"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -1111,246 +1111,10 @@ Wire Wire Line
 	3600 4350 4000 4350
 Text GLabel 2050 5250 0    50   Input ~ 0
 A7_OP4
-Text GLabel 2000 3950 0    50   Input ~ 0
-A8_OP3
 Text Notes 5800 3050 0    50   ~ 0
 Optional anti-aliasing filter
 Text Notes 5800 4050 0    50   ~ 0
 Optional anti-aliasing filter
-$Comp
-L Device:R R13
-U 1 1 5CE3942E
-P 7350 5100
-F 0 "R13" H 7280 5054 50  0000 R CNN
-F 1 "68k" H 7280 5145 50  0000 R CNN
-F 2 "OPL_Resistor:R0603" V 7280 5100 50  0001 C CNN
-F 3 "~" H 7350 5100 50  0001 C CNN
-	1    7350 5100
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R15
-U 1 1 5CE39C05
-P 7350 6000
-F 0 "R15" H 7420 6046 50  0000 L CNN
-F 1 "68k" H 7420 5955 50  0000 L CNN
-F 2 "OPL_Resistor:R0603" V 7280 6000 50  0001 C CNN
-F 3 "~" H 7350 6000 50  0001 C CNN
-	1    7350 6000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R14
-U 1 1 5CE3AE93
-P 7350 5550
-F 0 "R14" H 7280 5504 50  0000 R CNN
-F 1 "1k" H 7280 5595 50  0000 R CNN
-F 2 "OPL_Resistor:R0603" V 7280 5550 50  0001 C CNN
-F 3 "~" H 7350 5550 50  0001 C CNN
-	1    7350 5550
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	7650 6150 7350 6150
-Wire Wire Line
-	7350 5850 7350 5800
-Wire Wire Line
-	7350 5400 7350 5300
-Wire Wire Line
-	7350 4950 7350 4900
-Wire Wire Line
-	7350 4900 7650 4900
-Wire Wire Line
-	8250 5000 8300 5000
-Wire Wire Line
-	8300 5000 8300 5300
-Wire Wire Line
-	8300 5300 7350 5300
-Connection ~ 7350 5300
-Wire Wire Line
-	7350 5300 7350 5250
-Wire Wire Line
-	8250 6050 8350 6050
-Wire Wire Line
-	8350 6050 8350 5800
-Wire Wire Line
-	8350 5800 7350 5800
-Connection ~ 7350 5800
-Wire Wire Line
-	7350 5800 7350 5700
-$Comp
-L Amplifier_Operational:TL084 U3
-U 3 1 5CE85461
-P 7950 4900
-F 0 "U3" H 7950 5267 50  0000 C CNN
-F 1 "TL084" H 7950 5176 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 7900 5000 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 8000 5100 50  0001 C CNN
-	3    7950 4900
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:TL084 U3
-U 2 1 5CE880D5
-P 7950 6150
-F 0 "U3" H 7950 5783 50  0000 C CNN
-F 1 "TL084" H 7950 5874 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 7900 6250 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 8000 6350 50  0001 C CNN
-	2    7950 6150
-	-1   0    0    1   
-$EndComp
-$Comp
-L Amplifier_Operational:TL084 U3
-U 5 1 5CE8B0ED
-P 7850 4900
-F 0 "U3" H 7808 4946 50  0000 L CNN
-F 1 "TL084" H 7808 4855 50  0000 L CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 7800 5000 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 7900 5100 50  0001 C CNN
-	5    7850 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDA #PWR029
-U 1 1 5CE8D164
-P 7750 5200
-F 0 "#PWR029" H 7750 4950 50  0001 C CNN
-F 1 "GNDA" H 7755 5027 50  0000 C CNN
-F 2 "" H 7750 5200 50  0001 C CNN
-F 3 "" H 7750 5200 50  0001 C CNN
-	1    7750 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR028
-U 1 1 5CE8DCFE
-P 7750 4500
-F 0 "#PWR028" H 7750 4350 50  0001 C CNN
-F 1 "+5V" H 7765 4673 50  0000 C CNN
-F 2 "" H 7750 4500 50  0001 C CNN
-F 3 "" H 7750 4500 50  0001 C CNN
-	1    7750 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7750 4600 7750 4550
-$Comp
-L Device:C C18
-U 1 1 5CE954DB
-P 7550 4550
-F 0 "C18" V 7300 4450 50  0000 C CNN
-F 1 "100nF" V 7400 4450 50  0000 C CNN
-F 2 "OPL_Resistor:R0603" H 7588 4400 50  0001 C CNN
-F 3 "~" H 7550 4550 50  0001 C CNN
-	1    7550 4550
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GNDA #PWR027
-U 1 1 5CE959D2
-P 7350 4550
-F 0 "#PWR027" H 7350 4300 50  0001 C CNN
-F 1 "GNDA" H 7355 4377 50  0000 C CNN
-F 2 "" H 7350 4550 50  0001 C CNN
-F 3 "" H 7350 4550 50  0001 C CNN
-	1    7350 4550
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7700 4550 7750 4550
-Connection ~ 7750 4550
-Wire Wire Line
-	7750 4550 7750 4500
-Wire Wire Line
-	7400 4550 7350 4550
-Text Notes 7850 4400 0    50   ~ 0
-We use 5V as Seeed \ndoesn't stock quad RRO opamps
-$Comp
-L Device:R R11
-U 1 1 5CEA521D
-P 6850 4900
-F 0 "R11" V 6643 4900 50  0000 C CNN
-F 1 "68k" V 6734 4900 50  0000 C CNN
-F 2 "OPL_Resistor:R0603" V 6780 4900 50  0001 C CNN
-F 3 "~" H 6850 4900 50  0001 C CNN
-	1    6850 4900
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R12
-U 1 1 5CEA58BF
-P 6850 6150
-F 0 "R12" V 6643 6150 50  0000 C CNN
-F 1 "68k" V 6734 6150 50  0000 C CNN
-F 2 "OPL_Resistor:R0603" V 6780 6150 50  0001 C CNN
-F 3 "~" H 6850 6150 50  0001 C CNN
-	1    6850 6150
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R7
-U 1 1 5CEA5ED7
-P 6200 6150
-F 0 "R7" V 5993 6150 50  0000 C CNN
-F 1 "68k" V 6084 6150 50  0000 C CNN
-F 2 "OPL_Resistor:R0603" V 6130 6150 50  0001 C CNN
-F 3 "~" H 6200 6150 50  0001 C CNN
-	1    6200 6150
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R6
-U 1 1 5CEA66FC
-P 6200 4900
-F 0 "R6" V 5993 4900 50  0000 C CNN
-F 1 "68k" V 6084 4900 50  0000 C CNN
-F 2 "OPL_Resistor:R0603" V 6130 4900 50  0001 C CNN
-F 3 "~" H 6200 4900 50  0001 C CNN
-	1    6200 4900
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6350 4900 6550 4900
-Wire Wire Line
-	6350 6150 6550 6150
-Wire Wire Line
-	7000 6150 7350 6150
-Connection ~ 7350 6150
-Wire Wire Line
-	7000 4900 7350 4900
-Connection ~ 7350 4900
-$Comp
-L Amplifier_Operational:TL084 U3
-U 1 1 5CEC4FD2
-P 6150 5500
-F 0 "U3" H 6150 5867 50  0000 C CNN
-F 1 "TL084" H 6150 5776 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6100 5600 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 6200 5700 50  0001 C CNN
-	1    6150 5500
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	6050 6150 5750 6150
-Wire Wire Line
-	5750 6150 5750 5500
-Wire Wire Line
-	5750 5500 5850 5500
-Wire Wire Line
-	6450 5600 6550 5600
-Wire Wire Line
-	6550 5600 6550 6150
-Connection ~ 6550 6150
-Wire Wire Line
-	6550 6150 6700 6150
-Wire Wire Line
-	6450 5400 6550 5400
-Wire Wire Line
-	6550 5400 6550 4900
-Connection ~ 6550 4900
-Wire Wire Line
-	6550 4900 6700 4900
 $Comp
 L Device:LED D1
 U 1 1 5CF6B715
@@ -1400,7 +1164,7 @@ L Device:R R20
 U 1 1 5CF927A4
 P 2100 6700
 F 0 "R20" V 2000 6550 50  0000 C CNN
-F 1 "120" V 2000 6850 50  0000 C CNN
+F 1 "150" V 2000 6850 50  0000 C CNN
 F 2 "OPL_Resistor:R0603" V 2030 6700 50  0001 C CNN
 F 3 "~" H 2100 6700 50  0001 C CNN
 	1    2100 6700
@@ -1411,7 +1175,7 @@ L Device:R R21
 U 1 1 5CFABEB4
 P 2100 6900
 F 0 "R21" V 2000 6750 50  0000 C CNN
-F 1 "120" V 2000 7050 50  0000 C CNN
+F 1 "150" V 2000 7050 50  0000 C CNN
 F 2 "OPL_Resistor:R0603" V 2030 6900 50  0001 C CNN
 F 3 "~" H 2100 6900 50  0001 C CNN
 	1    2100 6900
@@ -1422,7 +1186,7 @@ L Device:R R22
 U 1 1 5CFAC11B
 P 2100 7100
 F 0 "R22" V 2000 6950 50  0000 C CNN
-F 1 "120" V 2000 7250 50  0000 C CNN
+F 1 "150" V 2000 7250 50  0000 C CNN
 F 2 "OPL_Resistor:R0603" V 2030 7100 50  0001 C CNN
 F 3 "~" H 2100 7100 50  0001 C CNN
 	1    2100 7100
@@ -1433,7 +1197,7 @@ L Device:R R23
 U 1 1 5CFAC469
 P 2100 7300
 F 0 "R23" V 2000 7150 50  0000 C CNN
-F 1 "120" V 2000 7450 50  0000 C CNN
+F 1 "150" V 2000 7450 50  0000 C CNN
 F 2 "OPL_Resistor:R0603" V 2030 7300 50  0001 C CNN
 F 3 "~" H 2100 7300 50  0001 C CNN
 	1    2100 7300
@@ -1608,14 +1372,10 @@ Wire Wire Line
 	2300 5350 2050 5350
 Wire Wire Line
 	2300 5450 2050 5450
-Text GLabel 8500 6250 2    50   Input ~ 0
+Text GLabel 8500 6100 2    50   Input ~ 0
 IA_L
 Text GLabel 8500 4800 2    50   Input ~ 0
 IA_H
-Wire Wire Line
-	8500 4800 8250 4800
-Wire Wire Line
-	8500 6250 8250 6250
 $Comp
 L Connector:Screw_Terminal_01x06 J3
 U 1 1 5D14108F
@@ -1659,7 +1419,7 @@ Wire Wire Line
 	9600 1600 9600 1650
 Text GLabel 9600 2450 0    50   Input ~ 0
 HV_A4
-Text GLabel 9600 2550 0    50   Input ~ 0
+Text GLabel 9600 2350 0    50   Input ~ 0
 HV_A5
 Wire Wire Line
 	9550 1400 9700 1400
@@ -1692,7 +1452,7 @@ Text GLabel 9600 2050 0    50   Input ~ 0
 A1
 Text GLabel 9600 2250 0    50   Input ~ 0
 A2
-Text GLabel 9600 2350 0    50   Input ~ 0
+Text GLabel 7200 5400 0    50   Input ~ 0
 A3
 Wire Wire Line
 	9600 2250 9700 2250
@@ -1703,35 +1463,19 @@ Wire Wire Line
 Wire Wire Line
 	9700 2550 9600 2550
 Text GLabel 9550 1300 0    50   Input ~ 0
-IA_H
-Text GLabel 9550 1400 0    50   Input ~ 0
 IA_L
+Text GLabel 9550 1400 0    50   Input ~ 0
+IA_H
 Text GLabel 5800 2650 0    50   Input ~ 0
 A7_OP4
 Text GLabel 5800 3650 0    50   Input ~ 0
 A6_OP1
-Text GLabel 5600 5500 0    50   Input ~ 0
-A8_OP3
-Wire Wire Line
-	5600 5500 5750 5500
-Connection ~ 5750 5500
 Wire Wire Line
 	5800 2650 6100 2650
 Connection ~ 6100 2650
 Wire Wire Line
 	5800 3650 6100 3650
 Connection ~ 6100 3650
-$Comp
-L Connector:TestPoint TP1
-U 1 1 5D2CECA2
-P 5750 5500
-F 0 "TP1" H 5808 5618 50  0000 L CNN
-F 1 "IA_OUT" H 5600 5750 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 5950 5500 50  0001 C CNN
-F 3 "~" H 5950 5500 50  0001 C CNN
-	1    5750 5500
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector:TestPoint TP3
 U 1 1 5D2CF247
@@ -1759,8 +1503,6 @@ Wire Wire Line
 Wire Wire Line
 	4600 7100 4700 7100
 Connection ~ 4600 7200
-Text Notes 7600 5600 0    50   ~ 0
-Gain = 69\nHigher gain is possible using the internal PGA (up to 1104)
 $Comp
 L Graphic:Logo_Open_Hardware_Large #LOGO1
 U 1 1 5D31835F
@@ -1788,30 +1530,6 @@ NoConn ~ 2300 4150
 NoConn ~ 2300 4250
 NoConn ~ 2300 4350
 NoConn ~ 2300 4450
-$Comp
-L Amplifier_Operational:TL084 U3
-U 4 1 5D48065D
-P 5700 4900
-F 0 "U3" H 5700 4533 50  0000 C CNN
-F 1 "TL084" H 5700 4624 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 5650 5000 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 5750 5100 50  0001 C CNN
-	4    5700 4900
-	1    0    0    1   
-$EndComp
-$Comp
-L power:GNDA #PWR0109
-U 1 1 5D487CCE
-P 5000 5400
-F 0 "#PWR0109" H 5000 5150 50  0001 C CNN
-F 1 "GNDA" H 5005 5227 50  0000 C CNN
-F 2 "" H 5000 5400 50  0001 C CNN
-F 3 "" H 5000 5400 50  0001 C CNN
-	1    5000 5400
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	5400 4800 5250 4800
 $Comp
 L power:GND #PWR0110
 U 1 1 5CE0C86F
@@ -1889,61 +1607,6 @@ Wire Wire Line
 	2300 4950 1550 4950
 Wire Wire Line
 	2300 5050 1550 5050
-Text Notes 6000 4650 0    50   ~ 0
-Vref
-Wire Wire Line
-	6000 4900 6050 4900
-Wire Wire Line
-	6000 4900 6000 4650
-Wire Wire Line
-	6000 4650 5250 4650
-Wire Wire Line
-	5250 4650 5250 4800
-Connection ~ 6000 4900
-$Comp
-L Device:R R25
-U 1 1 5D235C21
-P 5000 5200
-F 0 "R25" H 5070 5246 50  0000 L CNN
-F 1 "1k" H 5070 5155 50  0000 L CNN
-F 2 "OPL_Resistor:R0603" V 4930 5200 50  0001 C CNN
-F 3 "~" H 5000 5200 50  0001 C CNN
-	1    5000 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R24
-U 1 1 5D2371A7
-P 5000 4800
-F 0 "R24" H 5070 4846 50  0000 L CNN
-F 1 "1k" H 5070 4755 50  0000 L CNN
-F 2 "OPL_Resistor:R0603" V 4930 4800 50  0001 C CNN
-F 3 "~" H 5000 4800 50  0001 C CNN
-	1    5000 4800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5000 5050 5000 5000
-Wire Wire Line
-	5000 5350 5000 5400
-Wire Wire Line
-	5400 5000 5000 5000
-Connection ~ 5000 5000
-Wire Wire Line
-	5000 5000 5000 4950
-$Comp
-L power:+3.3VADC #PWR0112
-U 1 1 5D26A5CC
-P 5000 4650
-F 0 "#PWR0112" H 5150 4600 50  0001 C CNN
-F 1 "+3.3VADC" H 5050 4800 50  0000 C CNN
-F 2 "" H 5000 4650 50  0001 C CNN
-F 3 "" H 5000 4650 50  0001 C CNN
-	1    5000 4650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2300 3950 2000 3950
 Text GLabel 4000 4450 2    50   Input ~ 0
 DAC1_OUT2
 Wire Wire Line
@@ -1996,7 +1659,7 @@ L Device:C C19
 U 1 1 5D355F8F
 P 9300 3200
 F 0 "C19" H 9415 3246 50  0000 L CNN
-F 1 "10n" H 9415 3155 50  0000 L CNN
+F 1 "1n" H 9415 3155 50  0000 L CNN
 F 2 "OPL_Capacitor:C0603" H 9338 3050 50  0001 C CNN
 F 3 "~" H 9300 3200 50  0001 C CNN
 	1    9300 3200
@@ -2044,7 +1707,7 @@ L Device:C C20
 U 1 1 5D3B3085
 P 9300 3950
 F 0 "C20" H 9415 3996 50  0000 L CNN
-F 1 "10n" H 9415 3905 50  0000 L CNN
+F 1 "1n" H 9415 3905 50  0000 L CNN
 F 2 "OPL_Capacitor:C0603" H 9338 3800 50  0001 C CNN
 F 3 "~" H 9300 3950 50  0001 C CNN
 	1    9300 3950
@@ -2088,7 +1751,7 @@ F 3 "" H 10550 3350 50  0001 C CNN
 $EndComp
 Connection ~ 10150 3900
 Text Notes 8450 3250 0    50   ~ 0
-15.9kHz low-pass\n
+159kHz low-pass\n
 Wire Wire Line
 	10400 3900 10400 3150
 Wire Wire Line
@@ -2108,7 +1771,7 @@ U 3 1 5D4FE230
 P 10350 3150
 F 0 "U6" H 10308 3196 50  0000 L CNN
 F 1 "MCP6002-xSN" H 10308 3105 50  0000 L CNN
-F 2 "" H 10350 3150 50  0001 C CNN
+F 2 "OPL_Integrated_Circuit:SOIC8-1.27-5X4MM" H 10350 3150 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 10350 3150 50  0001 C CNN
 	3    10350 3150
 	1    0    0    -1  
@@ -2134,5 +1797,227 @@ F 2 "" H 10250 2850 50  0001 C CNN
 F 3 "" H 10250 2850 50  0001 C CNN
 	1    10250 2850
 	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 5200 8100 4800
+Wire Wire Line
+	8100 4800 8500 4800
+Wire Wire Line
+	7900 5200 8100 5200
+Wire Wire Line
+	8100 5600 7900 5600
+Wire Wire Line
+	8100 6100 8100 5600
+Wire Wire Line
+	8100 6100 8500 6100
+$Comp
+L Device:R R6
+U 1 1 5D5C9A09
+P 8900 5550
+F 0 "R6" H 8750 5600 50  0000 L CNN
+F 1 "10k" V 8900 5450 50  0000 L CNN
+F 2 "OPL_Resistor:R0603" V 8830 5550 50  0001 C CNN
+F 3 "~" H 8900 5550 50  0001 C CNN
+	1    8900 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 5300 7900 5300
+Wire Wire Line
+	7900 5500 8200 5500
+Text Notes 8850 6100 0    50   ~ 0
+Gain = 1 + (100 kΩ/RG)\nGain(100) = 1000x\nGain(1k) = 100x\nGain(10k) = 10.1x
+$Comp
+L Amplifier_Instrumentation:INA128 U7
+U 1 1 5CE5F2BD
+P 7600 5400
+F 0 "U7" H 8150 5550 50  0000 C CNN
+F 1 "INA128" H 7900 5550 50  0000 C CNN
+F 2 "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm" H 7700 5400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ina128.pdf" H 7700 5400 50  0001 C CNN
+	1    7600 5400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0109
+U 1 1 5CE77D25
+P 6350 6100
+F 0 "#PWR0109" H 6350 5850 50  0001 C CNN
+F 1 "GNDA" H 6355 5927 50  0000 C CNN
+F 2 "" H 6350 6100 50  0001 C CNN
+F 3 "" H 6350 6100 50  0001 C CNN
+	1    6350 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0112
+U 1 1 5CE78524
+P 7600 5700
+F 0 "#PWR0112" H 7600 5450 50  0001 C CNN
+F 1 "GNDA" H 7750 5600 50  0000 C CNN
+F 2 "" H 7600 5700 50  0001 C CNN
+F 3 "" H 7600 5700 50  0001 C CNN
+	1    7600 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3VADC #PWR0118
+U 1 1 5CE880B2
+P 6350 5500
+F 0 "#PWR0118" H 6500 5450 50  0001 C CNN
+F 1 "+3.3VADC" H 6400 5650 50  0000 C CNN
+F 2 "" H 6350 5500 50  0001 C CNN
+F 3 "" H 6350 5500 50  0001 C CNN
+	1    6350 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 5700 7500 5800
+Text Notes 6700 5200 0    50   ~ 0
+POPULATED INA333\n
+$Comp
+L Reference_Voltage:REF3012 U3
+U 1 1 5CEBDB34
+P 6450 5800
+F 0 "U3" H 6221 5846 50  0000 R CNN
+F 1 "REF3012" H 6221 5755 50  0000 R CIN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6450 5350 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/ref3033.pdf" H 6550 5450 50  0001 C CIN
+	1    6450 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 5800 7500 5800
+$Comp
+L power:+3.3VADC #PWR0119
+U 1 1 5CEFCC1D
+P 7600 5100
+F 0 "#PWR0119" H 7750 5050 50  0001 C CNN
+F 1 "+3.3VADC" H 7650 5250 50  0000 C CNN
+F 2 "" H 7600 5100 50  0001 C CNN
+F 3 "" H 7600 5100 50  0001 C CNN
+	1    7600 5100
+	1    0    0    -1  
+$EndComp
+Text Notes 8850 6300 0    50   ~ 0
+0.1% Precision resistors\n\n
+$Comp
+L power:GNDA #PWR0120
+U 1 1 5CEFEB81
+P 9600 2550
+F 0 "#PWR0120" H 9600 2300 50  0001 C CNN
+F 1 "GNDA" H 9605 2377 50  0000 C CNN
+F 2 "" H 9600 2550 50  0001 C CNN
+F 3 "" H 9600 2550 50  0001 C CNN
+	1    9600 2550
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2300 3950
+$Comp
+L Device:C C18
+U 1 1 5CF817FD
+P 5750 5800
+F 0 "C18" H 5600 5900 50  0000 L CNN
+F 1 "100nF" H 5500 5700 50  0000 L CNN
+F 2 "OPL_Resistor:R0603" H 5788 5650 50  0001 C CNN
+F 3 "~" H 5750 5800 50  0001 C CNN
+	1    5750 5800
+	1    0    0    -1  
+$EndComp
+Connection ~ 6350 5500
+Wire Wire Line
+	6350 6100 5750 6100
+Wire Wire Line
+	5750 6100 5750 5950
+Connection ~ 6350 6100
+Wire Wire Line
+	5750 5500 5750 5650
+Wire Wire Line
+	5750 5500 6350 5500
+$Comp
+L Jumper:SolderJumper_2_Open JP5
+U 1 1 5CFD2423
+P 8900 5250
+F 0 "JP5" V 8800 5100 50  0000 L CNN
+F 1 "10x" V 8950 5200 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8900 5250 50  0001 C CNN
+F 3 "~" H 8900 5250 50  0001 C CNN
+	1    8900 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP4
+U 1 1 5D013F18
+P 8700 5250
+F 0 "JP4" V 8600 5100 50  0000 L CNN
+F 1 "100x" V 8750 5150 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8700 5250 50  0001 C CNN
+F 3 "~" H 8700 5250 50  0001 C CNN
+	1    8700 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5D014871
+P 8700 5550
+F 0 "R11" H 8550 5600 50  0000 L CNN
+F 1 "1k" V 8700 5500 50  0000 L CNN
+F 2 "OPL_Resistor:R0603" V 8630 5550 50  0001 C CNN
+F 3 "~" H 8700 5550 50  0001 C CNN
+	1    8700 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5D014C14
+P 8500 5550
+F 0 "R7" H 8350 5600 50  0000 L CNN
+F 1 "100" V 8500 5450 50  0000 L CNN
+F 2 "OPL_Resistor:R0603" V 8430 5550 50  0001 C CNN
+F 3 "~" H 8500 5550 50  0001 C CNN
+	1    8500 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP3
+U 1 1 5D014F38
+P 8500 5250
+F 0 "JP3" V 8400 5050 50  0000 L CNN
+F 1 "1000x" V 8550 5050 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8500 5250 50  0001 C CNN
+F 3 "~" H 8500 5250 50  0001 C CNN
+	1    8500 5250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8200 5700 8500 5700
+Wire Wire Line
+	8200 5500 8200 5700
+Wire Wire Line
+	8500 5700 8700 5700
+Connection ~ 8500 5700
+Wire Wire Line
+	8700 5700 8900 5700
+Connection ~ 8700 5700
+Wire Wire Line
+	8500 5100 8200 5100
+Wire Wire Line
+	8200 5100 8200 5300
+Wire Wire Line
+	8700 5100 8500 5100
+Connection ~ 8500 5100
+Wire Wire Line
+	8900 5100 8700 5100
+Connection ~ 8700 5100
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5D0BD106
+P 7200 5400
+F 0 "TP1" H 7258 5518 50  0000 L CNN
+F 1 "IN_AMP" H 7050 5650 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 7400 5400 50  0001 C CNN
+F 3 "~" H 7400 5400 50  0001 C CNN
+	1    7200 5400
+	-1   0    0    1   
 $EndComp
 $EndSCHEMATC
